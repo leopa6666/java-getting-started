@@ -66,7 +66,7 @@ public class Main {
 
       ArrayList<String> output = new ArrayList<String>();
       while (rs.next()) {
-        output.add("Read from DB: " + rs.getTimestamp("tick") + rs.getNString("description"));
+        output.add("Read from DB: " + rs.getTimestamp("tick") + rs.getString("description"));
       }
 
       model.put("records", output);
