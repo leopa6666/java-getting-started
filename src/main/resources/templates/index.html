@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'index')}">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <body>
 
 <div class="jumbotron text-center">
@@ -9,37 +10,29 @@
       <img src="/lang-logo.png">
     </a>
     <h1>Hello!!</h1>
-    <p>This is a sample Java application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="./otherPage.html"><span class="glyphicon glyphicon-flash"></span> Getting Started with Java</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/java-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
+    <a type="button" class="btn btn-lg btn-default" href="./otherPage.html"><span class="glyphicon glyphicon-flash"></span> SamplePage</a>
   </div>
 </div>
 <div class="container">
   <hr>
-  <div class="row">
+  <div>
+    <div>
+      <ul><p>数値計算</p>
+        <li>平方根</li>
+        <li>乗算</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row" style="float: right;">
     <div class="col-md-6">
-      <h3>Nature in Japan is beautiful.</h3>
+      <h3>平凡な人生に幸あれ</h3>
       <ul>
         <li style="list-style: none;"><img alt="kouyo" src="/img/3031105813_80da3a8a09.jpg"></li>
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/java-getting-started/blob/master/pom.xml">pom.xml</a>, creating a slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
+        <li>同じことを繰り返しながら、違う結果を望むこと、それは正気の沙汰じゃない。</li>
+        <li style="color:#808080;">-アインシュタイン-</li>
       </ul>
     </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Next Steps</h3>
-      <ul>
-        <li>If you are following the <a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started</a> guide, then please head back to the tutorial and follow the next steps!</li>
-        <li>If you deployed this app by deploying the Heroku Button, then in a command line shell, run:</li>
-        <ul>
-          <li><code>git clone https://github.com/heroku/java-getting-started.git</code> - this will create a local copy of the source code for the app</li>
-          <li><code>cd java-getting-started</code> - change directory into the local source code repository</li>
-          <li><code>heroku git:remote -a &lt;your-app-name></code> - associate the Heroku app with the repository</li>
-          <li>You'll now be set up to run the app locally, or <a href="https://devcenter.heroku.com/articles/getting-started-with-java#push-local-changes">deploy changes</a> to Heroku</li>
-        </ul>
-      </ul>
-    </div>
-  </div> <!-- row -->
+  </div>
 </div>
 
 </body>
