@@ -2,6 +2,19 @@
 <html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'index')}">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+
+    //.accordion1の中のp要素がクリックされたら
+	$('.accordion1 p').click(function(){
+
+		//クリックされた.accordion1の中のp要素に隣接するul要素が開いたり閉じたりする。
+		$(this).next('ul').slideToggle();
+
+	});
+});
+</script>
+
 <body>
 
 <div class="jumbotron text-center">
@@ -17,7 +30,8 @@
   <hr>
   <div>
     <div>
-      <ul><p>数値計算</p>
+      <p>数値計算</p>
+      <ul class="accordion1">
         <li>平方根</li>
         <li>乗算</li>
       </ul>
