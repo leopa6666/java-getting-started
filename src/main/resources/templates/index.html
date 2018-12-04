@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'index')}">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
-$(function(){
-
-    //.accordion1の中のp要素がクリックされたら
-	$('.accordion1 p').click(function(){
-
-		//クリックされた.accordion1の中のp要素に隣接するul要素が開いたり閉じたりする。
-		$(this).next('ul').slideToggle();
-
-	});
-});
-</script>
 
 <body>
 
@@ -42,7 +29,7 @@ $(function(){
       <h3>平凡な人生に幸あれ</h3>
       <ul>
         <li style="list-style: none;"><img alt="kouyo" src="/img/3031105813_80da3a8a09.jpg"></li>
-        <li>同じことを繰り返しながら、違う結果を望むこと、それは正気の沙汰じゃない。</li>
+        <li>同じことを繰り返しながら、違う結果を望むこと、それは狂気だ。</li>
         <li style="color:#808080;">-アインシュタイン-</li>
       </ul>
     </div>

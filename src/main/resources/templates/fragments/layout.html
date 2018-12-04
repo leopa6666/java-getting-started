@@ -2,8 +2,23 @@
 <html th:fragment="layout (template, menu)">
 <head>
     <title>Java Getting Started on Heroku</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+
+	<script type="text/javascript">
+	$(function(){
+
+	    //.accordion1の中のp要素がクリックされたら
+		$('.accordion1 p').click(function(){
+
+			//クリックされた.accordion1の中のp要素に隣接するul要素が開いたり閉じたりする。
+			$(this).next('ul').slideToggle();
+
+		});
+	});
+</script>
+
 </head>
 
 <body>
