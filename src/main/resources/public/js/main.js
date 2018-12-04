@@ -1,5 +1,2 @@
 
 
-function alert() {
-	alert("Hello");
-}
